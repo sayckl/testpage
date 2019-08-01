@@ -7,3 +7,16 @@ function nextSlide() {
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
 }
+const form = document.querySelector('.support-body');
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  const isValid = validate(event)
+})
+const validate = () => {
+  let isValid = true
+  if(!email.value.match(/^\w{1,}@\w{1,}\.\w{2,}$/)) {
+    email.classList.add("error");
+    isValid = false;
+  }else{
+    email.classList.remove("error");
+}
