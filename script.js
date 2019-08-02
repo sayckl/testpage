@@ -20,9 +20,9 @@ const form = document.querySelector('.support-body');
 form.addEventListener('submit', event => {
   event.preventDefault()
   const isValid = validate(event)
-/*  if (isValid) {
+  if (isValid) {
 
-var mandrill = require('node-mandrill')('<Your Api Key Here>');
+var mandrill = require('node-mandrill')('349a1014fe9045f082e572afb0ee213a-us3');
 
   mandrill('/messages/send', {
     message: {
@@ -39,7 +39,7 @@ var mandrill = require('node-mandrill')('<Your Api Key Here>');
     //everything's good, lets see what mandrill said
     else console.log(response);
 });
-} */
+} 
   form.reset();
 })
 
