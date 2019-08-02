@@ -19,7 +19,27 @@ function nextSlide() {
 const form = document.querySelector('.support-body');
 form.addEventListener('submit', event => {
   event.preventDefault()
-  validate(event)
+  const isValid = validate(event)
+/*  if (isValid) {
+
+var mandrill = require('node-mandrill')('<Your Api Key Here>');
+
+  mandrill('/messages/send', {
+    message: {
+        to: [{email: '${email.value}'}],
+        from_email: 'you@domain.com',
+        subject: "Test site",
+        text: "Привіт, це перевірка тестового завдання, яке зробив Тимур."
+    }
+}, function(error, response)
+{
+    //uh oh, there was an error
+    if (error) console.log( JSON.stringify(error) );
+
+    //everything's good, lets see what mandrill said
+    else console.log(response);
+});
+} */
   form.reset();
 })
 
