@@ -9,33 +9,54 @@
   <body>
     <header>
       <div class="home-btn">
-        <a href="#">
+        <a href="index.html">
           <img src="img/fingerprint.png" alt="">
           <span class="homebtn-text">tynione</span>
         </a>
       </div>
       <div class="main-menu">
-        <a href=".features">
+        <a href="#features">
           <span class="mm-btn">Features</span>
         </a>
-        <a href=".support">
+        <a href="#support">
           <span class="mm-btn">Support</span>
         </a>
         <a href="#">
           <span class="mm-btn">Blog</span>
         </a>
       </div>
+      <div class="menu-button">
+        <a href="#" class="menu-btn">
+          <span></span>
+        </a>
+      </div>
     </header>
     <section class="slider">
       <ul id="slides">
-        <li class="slide showing">Slide 1</li>
+        <li class="slide showing">
+          <div class="slide-box">
+            <div class="slide-text">
+              <h2>Impress yor inspiration</h2>
+              <h3>Simple to use for your app, products showcase and your inspiration.</h3>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+              <div class="download">
+                <a href="#"><img src="img/icon-fa-apple.png"></a>
+                <a href="#"><img src="img/icon-fa-android.png"></a>
+                <a href="#"><img src="img/icon-fa-windows.png"></a>
+              </div>
+            </div>
+            <div class="picture">
+              <img src="img/iPad Mini White facing.png" alt="Ipad-icon">
+            </div>
+          </div>
+        </li>
         <li class="slide">Slide 2</li>
         <li class="slide">Slide 3</li>
         <li class="slide">Slide 4</li>
         <li class="slide">Slide 5</li>
       </ul>
     </section>
-    <section class="features">
+    <section id="features" class="features">
       <div class="features-head">
         <h2>Tinyone features</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h3>
@@ -85,15 +106,15 @@
         </div>
       </div>
     </section>
-    <section class="support">
+    <section id="support" class="support">
       <div class="support-head">
         <h4>Keep in touch with us</h4>
         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
       </div>
-      <div class="support-body">
-        <input id="email" type="text" name="" value="" placeholder="Enter your email to update">
+      <form class="support-body">
+        <input id="email" type="text" name="" placeholder="Enter your email to update">
         <button id="e-submit" type="submit" name="button">SUBMIT</button>
-      </div>
+      </form>
       <div class="social-networks">
         <a href="#"><img src="img/facebook ico.png" alt="Facebook"></a>
         <a href="#"><img src="img/twitter ico.png" alt="Twitter"></a>
