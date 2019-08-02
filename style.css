@@ -47,6 +47,8 @@
 }
 body{
   margin: 0;
+  max-width: 1924px;
+  min-width: 320px;
 }
 a {
   text-decoration: none;
@@ -83,6 +85,9 @@ header {
 .main-menu {
   display: flex;
   justify-content: space-between;
+}
+.mm-btn:hover {
+  color: #fff;
 }
 .slider {
   padding-bottom: 110px;
@@ -199,4 +204,10 @@ footer {
 }
 .link-block {
   padding-left: 50px;
+}
+.error {
+  border: solid 5px red;
+}
+@media screen and (-width: px) {
+
 }
